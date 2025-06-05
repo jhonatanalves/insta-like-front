@@ -1,4 +1,4 @@
-import fetchImages from './fatchApi.js'; // incluindo .js
+import fetchPosts from './fatchApi.js'; // incluindo .js
 
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
