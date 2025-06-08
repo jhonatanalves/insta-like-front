@@ -9,13 +9,14 @@
     <meta name="description"
         content="Explore o mundo com Viagem Dev! Veja fotos inspiradoras e histórias de viagens incríveis.">
     <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                Insta<strong>Like</strong>
+                <a href="./index.html"> Insta<strong>Like</strong></a>
             </div>
             <div class="nav-links">
                 <button class="login-btn" aria-label="Entrar">Entrar</button>
@@ -25,24 +26,20 @@
     </header>
 
     <main class="profile-container">
-        <section class="profile-header">
-            <img src="photos/ash.png" alt="Ash ketchum, um treinador Pokémon da cidade de Pallet."
-                class="profile-pic" />
-            <div class="profile-info">
-                <h1>@ashketchum</h1>
-                <p>6 publicações · 952 seguidores · 537 seguindo</p>
-            </div>
+        <section class="upload-form">
+            <h2>Novo Post</h2>
+            <form id="form-post" method="POST" enctype="multipart/form-data">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="imagem">Imagem:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+                <button type="submit">Postar</button>
+            </form>
         </section>
-        <section class="image-grid"> </section>
-        <section class="profile-header"> </section>
-        <a href="./upload.html" class="new-post-link"> nova publicação </a>
     </main>
-    <div id="modal" class="modal">
-        <span class="close">x</span>
-        <img class="modal-content" id="modal-img">
-        <div id="caption"></div>
-    </div>
-    <script src="assets/js/index.js" type="module"></script>
+    <script src="assets/js/upload.js" type="module"></script>
 </body>
 
 </html>

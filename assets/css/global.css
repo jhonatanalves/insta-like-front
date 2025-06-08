@@ -6,6 +6,7 @@
     --primary-color: #45474B;
     --secondary-color: #F5F7F8;
     --tertiary-color: #379777;
+    --quaternary-color: #6c6f75;
 
     --border-radius-small: 0.25rem;
     --border-radius-medium: 0.625rem;
@@ -21,6 +22,14 @@
     box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--secondary-color);
@@ -28,7 +37,6 @@ body {
     height: 100vh;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -95,6 +103,20 @@ body {
 .signup-link:hover {
     color: var(--tertiary-color);
 }
+
+/* Link de Nova Publicação */
+.new-post-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+    font-weight: bolder;
+    transition: color var(--transition-fast);
+}
+
+.new-post-link:hover {
+    color: purple;
+}
+
 
 /* Profile */
 .profile-container {
